@@ -1,0 +1,249 @@
+ /* color: #e1a123; */
+
+* {
+    font-family: 'Raleway', sans-serif;;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* H1 Header */
+#mainHeader {
+    font-size: 60pt; 
+    text-align: center; 
+    color: #03989e;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make each nav item stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .navBar a {
+      float: none;
+      display: block;
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .resourcesContainer, .imageGallery {   
+      flex-direction: column;
+    }
+  }
+
+/* Navigation Bar Styling */
+.navigation {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.navBar {
+    list-style: none;
+}
+.navList {
+
+    display: inline-block;
+    margin-right: 55px;
+}
+
+.navList a:hover, a:active {
+    background-color: #03989e;
+}
+
+/* Home Page Styling */
+
+/* Home Page Paragraph */
+#homePageParagraph {
+    font-size: 16pt;
+    text-align: center;
+}
+
+/* Gallery */
+.imageGallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+     
+}
+
+/* images size */
+.images {
+    max-width: 400px;
+    max-height: 350px;
+}
+
+
+/* .imageCentre {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+  } */
+
+/* Resources Page Styling */
+
+/* Column container */
+.resourcesContainer {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+/* Create two unequal columns that sits next to each other */
+/* Main column */
+.mainContent {   
+    flex: 60%;
+    padding: 25px;
+}
+
+/* right side column */
+.sideContent {
+    flex: 40%;
+    padding: 25px;
+}
+
+.titleImage {
+    padding-left: 0px;
+    border-radius: 10%;
+    float:left;
+    padding: 10px;
+    /* width: 330px;
+    height: 330px; */
+}
+
+/* H3 headers in resources page */
+.contentHeader{
+    font-weight: bold;
+    color: #e1a123;
+}
+
+/*Add styles to the class "sideImage" used for images in the side column */
+.sideImage {
+    padding-left: 0px;
+    border-radius: 10%;
+    /* text-align: center; */
+    padding: 10px;
+    width: 330px;
+    height: 330px;
+}
+
+/* Add styles to the class "sideHeader" used for H3 heading in the side column */
+
+.sideHeader {
+    font-weight: bold;
+    /* padding-left: 40px; */
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #e1a123;
+
+}
+
+/* Add styles to the class "sideText" */
+.sideText {
+    padding-left: 20px;
+}
+
+/* Anchor link styling for resources page */
+.resourcesContainer a:hover, a:active {
+    background-color: #03989e;
+}
+
+footer {
+    position: initial;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 3px;
+}
+
+.contactHeader {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+/* Add styles to 'container' class */
+.formContainer {
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 50%;
+    padding: 12px;
+    border-radius: 4px;
+    border-color: white;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: black;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 2px dashed teal;
+}
+
+/* Add styles to the send button */
+input[type=submit] {
+	background: #e1a123;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 20px 50px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Style 'hover' property for the 'send' button */
+input[type=submit]:hover {
+	background: #03989e;
+}
+
+/* Align items to centre of the div class 'formContainer' */
+.submitCentre {
+	text-align: center;
+}
+
+
+/*
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+.title {
+color: #e1a123;
+font-size: 18px;
+  }*/
