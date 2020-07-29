@@ -1,49 +1,30 @@
- /* color: #e1a123; */
-
 * {
-    font-family: 'Raleway', sans-serif;;
-    color: white;
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
     background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color: white
 }
+
+/* paragraph styling */
 
 p {
     font-size: 16px;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* H1 Header */
 #mainHeader {
-    font-size: 60pt; 
+    font-size: 80px; 
     text-align: center; 
     color: #03989e;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make each nav item stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .navBar a {
-      float: none;
-      display: block;
-    }
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .resourcesContainer, .imageGallery {   
-      flex-direction: column;
-    }
-  }
-
 /* Navigation Bar Styling */
 .navigation {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -54,18 +35,52 @@ a {
 .navList {
 
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 85px;
+}
+
+/* Navigation Bar anchor styling */
+.navList a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
 }
 
 .navList a:hover, a:active {
-    background-color: #03989e;
+    color:#e1a123;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make each nav item stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .navBar a {
+      float: none;
+      display: block;
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .resourcesContainer, .imageGallery{   
+      flex-direction: column;
+    }
+  }
+  
+/* Footer styling */
+footer {
+    position: initial;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 3px;
 }
 
 /* Home Page Styling */
 
 /* Home Page Paragraph */
 #homePageParagraph {
-    font-size: 16pt;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -77,20 +92,66 @@ a {
      
 }
 
-/* images size */
+/* Home page images size */
 .images {
     max-width: 400px;
     max-height: 350px;
 }
 
+/* About Page Styling */
 
-/* .imageCentre {
+.row{
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0px;
-  } */
+.container1{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.container2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+ /* introduction styling for the about page */
+.aboutIntro {
+    font-size: 26px;
+}
+
+.profileImage {
+    border-radius: 20%;
+}
+
+/* Role title */
+.title {
+    color: #e1a123;
+}
+
+/* Responsive layout for the About page */
+@media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+
+/* Anchor link styling for about page */
+.row a {
+    text-decoration: none;
+    color: #e1a123;
+}
+
+.row a:hover, a:active {
+    color: white;
+}
 
 /* Resources Page Styling */
 
@@ -113,13 +174,12 @@ a {
     padding: 25px;
 }
 
+/*Add styles to the class "titleImage" used for images in the main column */
 .titleImage {
     padding-left: 0px;
     border-radius: 10%;
     float:left;
     padding: 10px;
-    /* width: 330px;
-    height: 330px; */
 }
 
 /* H3 headers in resources page */
@@ -132,17 +192,14 @@ a {
 .sideImage {
     padding-left: 0px;
     border-radius: 10%;
-    /* text-align: center; */
     padding: 10px;
     width: 330px;
     height: 330px;
 }
 
 /* Add styles to the class "sideHeader" used for H3 heading in the side column */
-
 .sideHeader {
     font-weight: bold;
-    /* padding-left: 40px; */
     padding-top: 10px;
     padding-left: 20px;
     color: #e1a123;
@@ -155,19 +212,16 @@ a {
 }
 
 /* Anchor link styling for resources page */
+
+.resourcesContainer a{
+    text-decoration: none;
+    color: white;
+}
 .resourcesContainer a:hover, a:active {
-    background-color: #03989e;
+    color: #e1a123;
 }
 
-footer {
-    position: initial;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    padding: 3px;
-}
+/* Contact Page Styling*/
 
 .contactHeader {
     text-align: center;
@@ -227,23 +281,3 @@ input[type=submit]:hover {
 .submitCentre {
 	text-align: center;
 }
-
-
-/*
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card {
-    max-width: 200px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-.title {
-color: #e1a123;
-font-size: 18px;
-  }*/
